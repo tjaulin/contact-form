@@ -32,6 +32,7 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 15px;
+    color: var(--dark-grey);
 }
 
 #main-content-form {
@@ -71,6 +72,10 @@ body {
     margin: 10px 0;
 }
 
+.form-query-types>*:last-child {
+    margin-bottom: 20px;
+}
+
 .form-query-types>div>input {
     /* list-style: circle; */
     accent-color: var(--second-color);
@@ -84,11 +89,17 @@ body {
     margin-top: 10px;
 }
 
+.form-consent {
+    display: flex;
+    gap: 10px;
+}
+
+.form-consent>input {
+    accent-color: var(--second-color);
+}
+
 #message {
-    width: 100%;
-    border: 1px solid var(--grey-color);
-    border-radius: 5px;
-    margin-top: 10px;
+    height: unset;
 }
 
 #submit-button {
